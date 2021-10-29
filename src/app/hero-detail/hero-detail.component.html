@@ -2,8 +2,11 @@
     <h2>{{hero.name | uppercase}} Details</h2>
     <div><span>id: </span>{{hero.id}}</div>
     <div>
-        <label for="hero-name">Hero name: </label>
-        <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name" />
+        <label for="hero-name">Hotel name: </label>
+        <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hotel name" />
     </div>
+    <div><span>Amenities: </span>{{hero.amenities}}</div>
+    <div><span>Number of Rooms: </span>{{hero.numRooms}}</div>
+    <div><span>Weekend differential: </span>{{hero.weekendDif}}</div>
     <button (click)="goBack()">go back</button>
 </div>
