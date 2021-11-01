@@ -44,3 +44,7 @@ ul.search-result {
   margin-top: 0;
   padding-left: 0;
 }
+
+float-search {
+  float: inline-end;
+}
