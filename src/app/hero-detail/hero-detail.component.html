@@ -1,13 +1,36 @@
 <div *ngIf="hero">
     <h2>{{hero.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{hero.id}}</div>
+    <h3><span>id: </span>{{hero.id}}</h3>
+    <hr>
     <div>
         <label for="hero-name">Hotel name: </label>
         <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hotel name" />
     </div>
-    <div><span>Amenities: </span>{{hero.amenities}}</div>
-    <div><span>Number of Rooms: </span>{{hero.numRooms}}</div>
-    <div><span>Weekend differential: </span>{{hero.weekendDif}}</div>
+    <hr>
+    <div>
+        <label for="hero-amenities">Amenities: </label>
+        {{hero.amenities}}
+        <br>
+        <br>
+        <input id="hero-amenities" [(ngModel)]="hero.amenities" placeholder="Amenities" />
+    </div>
+    <hr>
+    <div>
+        <label for="hero-numrooms">Number of Rooms: </label>
+        {{hero.numRooms}}
+        <br>
+        <br>
+        <input id="hero-numrooms" [(ngModel)]="hero.numRooms" placeholder="#" />
+    </div>
+    <hr>
+    <div>
+        <label for="hero-weekenddif">Weekend Differential: </label>
+        {{hero.weekendDif}}
+        <br>
+        <br>
+        <input id="hero-weekenddif" [(ngModel)]="hero.weekendDif" placeholder="$" />
+    </div>
+    <hr>
     <button (click)="goBack()">go back</button>
     <button (click)="save()">save</button>
 </div>
